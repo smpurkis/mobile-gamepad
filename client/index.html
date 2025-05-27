@@ -19,7 +19,15 @@
     <div class="pad_number text"><div class="text" id="padText"></div></div>
     <div class="button_rt2 btn" id="btnRT" data-code="0x139"><h1>RT2</h1></div>
     <div class="button_rt btn" id="btnRT2" data-code="0x137"><h1>RT</h1></div>
-    <div class="joystick"><h1>JOYSTICK</h1></div>
+    <div class="dpad">
+      <div class="dpad-button dpad-up btn" data-direction="up"><h1>↑</h1></div>
+      <div class="dpad-middle">
+        <div class="dpad-button dpad-left btn" data-direction="left"><h1>←</h1></div>
+        <div class="dpad-center"></div>
+        <div class="dpad-button dpad-right btn" data-direction="right"><h1>→</h1></div>
+      </div>
+      <div class="dpad-button dpad-down btn" data-direction="down"><h1>↓</h1></div>
+    </div>
     <div class="buttons_menu_start">
       <div class="button_select btn" id="btnSELECT" data-code="0x13a"><h1>SELECT</h1></div>
       <div class="button_start btn" id="btnSTART" data-code="0x13b"><h1>START</h1></div>
@@ -41,7 +49,6 @@
 
   <script src="/js/jquery-2.2.3.min.js"></script>
   <script src="/js/socket.io-4.0.1.js"></script>
-  <script src="/js/nipplejs.min.js"></script>
   <script src="/js/client.js"></script>
 
 </body>
